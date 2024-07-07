@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Structure Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Data Structure Visualization</h1>
+        <select id="data-structure-select">
+            <option value="linked-list">Linked List</option>
+            <option value="stack">Stack</option>
+            <option value="queue">Queue</option>
+        </select>
+
+        <div id="feedback" class="feedback"></div>
+
+        <div id="linked-list-container">
+            <h2>Linked List</h2>
+            <input type="text" id="linked-list-value" placeholder="Value">
+            <button id="add-node-button"><img src="images/add-icon.png" alt="Add Node"></button>
+            <button id="remove-node-button"><img src="images/remove-icon.png" alt="Remove Node"></button>
+            <button id="clear-list-button"><img src="images/clear-icon.png" alt="Clear List"></button>
+            <input type="text" id="search-input" placeholder="Search Value">
+            <button id="search-node-button"><img src="images/search-icon.png" alt="Search Node"></button>
+            <div id="linked-list" class="data-structure"></div>
+            <pre><code id="linked-list-code-cpp" class="code-block"></code></pre>
+            <pre><code id="linked-list-code-java" class="code-block"></code></pre>
+        </div>
+
+        <div id="stack-container">
+            <h2>Stack</h2>
+            <input type="text" id="stack-value" placeholder="Value">
+            <button id="push-stack-button"><img src="images/push-icon.png" alt="Push"></button>
+            <button id="pop-stack-button"><img src="images/pop-icon.png" alt="Pop"></button>
+            <button id="clear-stack-button"><img src="images/clear-icon.png" alt="Clear"></button>
+            <div id="stack" class="data-structure"></div>
+            <pre><code id="stack-code-cpp" class="code-block"></code></pre>
+            <pre><code id="stack-code-java" class="code-block"></code></pre>
+        </div>
+
+        <div id="queue-container">
+            <h2>Queue</h2>
+            <input type="text" id="queue-value" placeholder="Value">
+            <button id="enqueue-button"><img src="images/enqueue-icon.png" alt="Enqueue"></button>
+            <button id="dequeue-button"><img src="images/dequeue-icon.png" alt="Dequeue"></button>
+            <button id="clear-queue-button"><img src="images/clear-icon.png" alt="Clear"></button>
+            <div id="queue" class="data-structure"></div>
+            <pre><code id="queue-code-cpp" class="code-block"></code></pre>
+            <pre><code id="queue-code-java" class="code-block"></code></pre>
+        </div>
+
+        <div id="bst-container">
+            <h2>Binary Search Tree</h2>
+            <input type="text" id="bst-value" placeholder="Value">
+            <button id="bst-add-button"><img src="images/add-icon.png" alt="Add Node"></button>
+            <button id="bst-remove-button"><img src="images/remove-icon.png" alt="Remove Node"></button>
+            <button id="bst-clear-button"><img src="images/clear-icon.png" alt="Clear Tree"></button>
+            <input type="text" id="bst-search-input" placeholder="Search Value">
+            <button id="bst-search-button"><img src="images/search-icon.png" alt="Search Node"></button>
+            <div id="bst" class="data-structure"></div>
+            <pre><code id="bst-code-cpp" class="code-block"></code></pre>
+            <pre><code id="bst-code-java" class="code-block"></code></pre>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
